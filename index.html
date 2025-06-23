@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Senior PR - Revisor IA+</title>
+
+  <!-- Google Analytics (G-5WHVKCGMRV) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WHVKCGMRV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5WHVKCGMRV', {
+      'link_attribution': true
+    });
+  </script>
+
+  <!-- Metadados -->
+  <meta name="description" content="Acesse o Senior PR - Revisor IA+, ferramenta de revisão avançada com linguagem técnica e auditoria especializada.">
+  <meta property="og:title" content="Senior PR - Revisor IA+">
+  <meta property="og:description" content="Clique para utilizar o revisor inteligente de textos técnicos e profissionais.">
+  <meta property="og:image" content="https://seusite.com/imagem-preview.png">
+</head>
+<body>
+  <main style="text-align:center; margin-top:50px;">
+    <h1>Bem-vindo ao Senior PR - Revisor IA+</h1>
+    <p>Você será redirecionado em instantes para o revisor inteligente.</p>
+    <a id="accessLink" href="#" style="font-size:1.2em; color:#0066cc;">Acessar agora →</a>
+  </main>
+
+  <script>
+    // URL do seu GPT personalizado
+    const gptURL = 'https://chat.openai.com/g/g-6847708d9238819181bd523fad07492c-senior-pr-revisor-ia?utm_source=landing&utm_medium=share&utm_campaign=seniorpr';
+
+    // Redirecionamento automático após 3 segundos
+    document.addEventListener('DOMContentLoaded', () => {
+      const link = document.getElementById('accessLink');
+      link.href = gptURL;
+
+      // Envia evento ao Google Analytics
+      gtag('event', 'clique_acesso', {
+        'event_category': 'GPT Link',
+        'event_label': 'Senior PR - Revisor IA+'
+      });
+
+      // Redirecionamento automático
+      setTimeout(() => {
+        window.location.href = gptURL;
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
+
+
